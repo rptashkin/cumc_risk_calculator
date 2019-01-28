@@ -44,7 +44,7 @@ server <- function(input, output) {
 
     # Compose data frame
     data.frame(
-        Parameter = c("pscore", "age","pralbum","asclas2","esurg",      "ascites","bleed"),
+        Parameter = c("pscore", "age","pralbum","asclas2","esurg","ascites","bleed"),
         Selection = c(input$pscore,
             input$age,
             input$pralbum,
@@ -173,8 +173,8 @@ server <- function(input, output) {
         return()
     }
     else{
-        isolate(paste("Estimated Risk: ", calculate(input$pscore,input$age,
-        input$pralbum, input$asclas2, input$esurg, input$ascites, input$bleed)))
+        isolate(paste("Estimated Risk: ", round(calculate(input$pscore,input$age,
+        input$pralbum, input$asclas2, input$esurg, input$ascites, input$bleed),digits = 4)))
     }
   })
 
