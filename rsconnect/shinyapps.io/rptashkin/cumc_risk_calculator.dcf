@@ -5,8 +5,8 @@ account: rptashkin
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 669891
-bundleId: 1840592
+bundleId: 1840613
 url: https://rptashkin.shinyapps.io/cumc_risk_calculator/
-when: 1548651718.30251
+when: 1548653323.43821
 asMultiple: FALSE
 asStatic: FALSE
